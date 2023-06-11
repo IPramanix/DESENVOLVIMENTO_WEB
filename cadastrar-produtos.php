@@ -153,7 +153,7 @@ body{
       <input type="number" id="precoVenda" name="precoVenda" required>
       
         <?php 
-        include('conexao.php');
+        require('conexao.php');
       
         $query = "SELECT id_fornecedor, nome_fornecedor FROM fornecedores ORDER BY id_fornecedor ASC";
         $resultado = $mysqli->query($query);
