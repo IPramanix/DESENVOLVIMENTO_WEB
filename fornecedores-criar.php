@@ -1,7 +1,7 @@
 <?php
   if(isset($_POST['submit']))
   {
-    require('conexao.php');
+    include_once('conexao.php');
 
     $nome_fornecedor = $_POST['nome_fornecedor'];
     $cnpj = $_POST['cnpj'];
