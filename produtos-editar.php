@@ -1,36 +1,6 @@
 <?php
-  if(!empty($_GET['id_produto']))
-  {
     include_once('conexao.php');
     
-    $id_produto = $_GET['id_produto'];
-
-    $sqlSelects = "SELECT * FROM  produtos WHERE id_produto=$id_produto";
-
-    $result = $mysqli->query($sqlSelects);
-
-    if($result->num_rows > 0)
-    {
-      while($user_data = mysqli_fetch_assoc($result))
-      {
-        $codigo = $user_data['codigo'];
-        $descricao = $user_data['descricao'];
-        $estoqueInicial = $user_data['estoqueInicial'];
-        $estoqueAtual = $user_data['estoqueAtual'];
-        $precoCompra = $user_data['precoCompra'];
-        $precoVenda = $user_data['precoVenda'];
-        $id_fornecedor = $user_data['id_fornecedor'];
-      }      
-    }
-    else
-    {
-      header('Location: ../produtos-listar.php');
-    }
-  }  
-  else
-  {
-
-  }
 ?>
 
 <!DOCTYPE html>
@@ -146,46 +116,7 @@ body{
   <div class="container">
     <h1>Editar Produto</h1>
     
-    <form action="../admin/salveEdit.php" method="POST">
-      <input type="hidden" name="id_produto" value="<?php echo $id_produto ?>">
-
-      <label for="codigo">Código:</label>
-      <input type="number" id="codigo" name="codigo" value="<?php echo $codigo ?>" required>
-      
-      <label for="descricao">Descrição:</label>
-      <input type="text" id="descricao" name="descricao" value="<?php echo $descricao ?>" required>
-      
-      <label for="estoqueInicial">Estoque Inicial:</label>
-      <input type="number" id="estoqueInicial" name="estoqueInicial" value="<?php echo $estoqueInicial ?>" required>
-      
-      <label for="estoqueAtual">Estoque Atual:</label>
-      <input type="number" id="estoqueAtual" name="estoqueAtual" value="<?php echo $estoqueAtual ?>" required>
-      
-      <label for="precoCompra">Preço de Compra:</label>
-      <input type="number" id="precoCompra" name="precoCompra" value="<?php echo $precoCompra ?>" required>
-      
-      <label for="precoVenda">Preço de Venda:</label>
-      <input type="number" id="precoVenda" name="precoVenda" value="<?php echo $precoVenda ?>" required>
-      
-        <?php 
-        include('conexao.php');
-      
-        $query = "SELECT id_fornecedor, nome_fornecedor FROM fornecedores ORDER BY id_fornecedor ASC";
-        $resultado = $mysqli->query($query);
-        ?>
-
-      <label for="nome_fornecedor">Fornecedor: <select id="id_fornecedor" name="id_fornecedor" required>
-        <option value="<?php echo $id_fornecedor ?>">Selecione um Fornecedor</option>
-        <?php WHILE($row = $resultado->fetch_assoc()) { ?>
-          <option value="<?php echo $row['id_fornecedor']; ?>
-          "><?php echo $row['nome_fornecedor']; ?></option>
-          <?php } ?>       
-      </select>
-      
-
-      <br>
-      <button type="submit" name="update" id="update" class="register-button">Atualizar</button>
-    </form>
+    
   </div>
 
   <div class="final"><h6>Obrigado por usar nosso site!</h6></div>
