@@ -4,7 +4,7 @@
   if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha']))
   {
       //acessa
-      include_once('conexao.php');
+      include_once('/admin/conexao.php');
       $usuario = $_POST['usuario'];
       $senha = $_POST['senha'];
 
@@ -24,7 +24,7 @@
       {
         $_SESSION['usuario'] = $usuario;
         $_SESSION['senha'] = $senha;
-        header('Location: home.php');
+        header('Location: /admin/home.php');
       }
 
   }
