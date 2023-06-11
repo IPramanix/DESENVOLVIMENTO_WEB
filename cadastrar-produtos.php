@@ -14,7 +14,7 @@
     $aresult = mysqli_query($mysqli, "INSERT INTO produtos(codigo, descricao, estoqueInicial, estoqueAtual, precoCompra, precoVenda, id_fornecedor) 
     VALUES ('$codigo', '$descricao', '$estoqueInicial', '$estoqueAtual', '$precoCompra', '$precoVenda', '$id_fornecedor')");
 
-    header('Location: ../listar-produtos.php');
+    header('Location: ../produtos-listar.php');
 
   }
 ?>

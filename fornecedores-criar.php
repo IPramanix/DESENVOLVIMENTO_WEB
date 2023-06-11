@@ -12,7 +12,7 @@
     $result = mysqli_query($mysqli, "INSERT INTO fornecedores(nome_fornecedor,cnpj,telefone,endereco,email) 
     VALUES ('$nome_fornecedor', '$cnpj', '$telefone', '$endereco', '$email')");
 
-    header('Location: ../lstfornecedores.php');
+    header('Location: ../fornecedores-listar.php');
   }
 ?>
 <!DOCTYPE html>
