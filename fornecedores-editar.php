@@ -133,7 +133,7 @@ body{
 </head>
 <body>
 
-  <form action="../admin/fornecedores-listar.php">
+  <form action="../fornecedores-listar.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
