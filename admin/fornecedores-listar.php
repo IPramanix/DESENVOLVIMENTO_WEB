@@ -1,4 +1,5 @@
 <?php
+  require('conexao.php');
   session_start();
   //print_r($_SESSION);
   if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
