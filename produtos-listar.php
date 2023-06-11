@@ -1,7 +1,5 @@
 <?php
   session_start();
-
-  include_once('../conexao.php');
   //print_r($_SESSION);
   if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
   {
@@ -9,6 +7,7 @@
     unset($_SESSION['usuario']);
     header('Location: ../index.php');
   }
+  $logado = $_SESSION['usuario'];
   $logado = $_SESSION['usuario'];
 
   $sql = "SELECT * FROM produtos ORDER BY id_produto ASC";
