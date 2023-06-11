@@ -128,7 +128,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="../produtos-listar.php" <?php header('Location: ../produtos-listar.php')?>>Produtos</a>
+          <a href="../produtos-listar.php">Produtos</a>
           <div class="dropdown-content">
             <div class="rectangle">
               <a href="../cadastrar-produtos.php">Cadastrar</a>
