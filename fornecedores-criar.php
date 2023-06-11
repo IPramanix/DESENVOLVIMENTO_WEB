@@ -1,16 +1,8 @@
 <?php
   include('conexao.php');
-  session_start();
-  if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
-  {
-    unset($_SESSION['usuario']);
-    unset($_SESSION['usuario']);
-    header('Location: ../index.php');
-  }
-  
   if(isset($_POST['submit']))
   {
-    include_once('conexao.php');
+    require_once('conexao.php');
 
     $nome_fornecedor = $_POST['nome_fornecedor'];
     $cnpj = $_POST['cnpj'];
