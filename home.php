@@ -129,7 +129,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="../listar-fornecedores.php">Produtos</a>
+          <a href="../listar-produtos.php">Produtos</a>
           <div class="dropdown-content">
             <div class="rectangle">
               <a href="../listar-produtos.php">Listar</a>
