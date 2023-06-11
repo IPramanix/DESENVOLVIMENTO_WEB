@@ -132,7 +132,7 @@ body{
   <div class="container">
     <h1>Cadastrar Produto</h1>
     
-    <form action="../admin/cadastrar-produtos.php" method="POST">
+    <form action="../cadastrar-produtos.php" method="POST">
       
       <label for="codigo">Código:</label>
       <input type="number" id="codigo" name="codigo" required>

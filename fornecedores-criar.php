@@ -128,7 +128,7 @@ body{
   <div class="container">
     <h1>Cadastrar fornecedor</h1>
     
-    <form action="../admin/fornecedores-criar.php" method="POST">
+    <form action="../fornecedores-criar.php" method="POST">
       
       <label for="nome_fornecedor">Nome:</label>
       <input type="text" id="nome_fornecedor" name="nome_fornecedor" required>
