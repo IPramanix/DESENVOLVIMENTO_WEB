@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  include_once('conexao.php');
+  include_once('../conexao.php');
   //print_r($_SESSION);
   if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
   {
