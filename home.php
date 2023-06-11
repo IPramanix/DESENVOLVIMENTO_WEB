@@ -120,19 +120,19 @@
       <ul>
         <li><a href="../home.php">Home</a></li>
         <li class="dropdown">
-          <a href="../fornecedores-listar.php">Fornecedores</a>
+          <a href="../admin/fornecedores-listar.php">Fornecedores</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../fornecedores-listar.php">Listar</a>
+              <a href="../admin/fornecedores-listar.php">Listar</a>
               <a href="../fornecedores-criar.php">Cadastrar</a>
             </div>
           </div>
         </li>
         <li class="dropdown">
-          <a href="../produtos-listar.php">Produtos</a>
+          <a href="../admin/produtos-listar.php">Produtos</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../produtos-listar.php">Listar</a>
+              <a href="../admin/produtos-listar.php">Listar</a>
               <a href="../cadastrar-produtos.php">Cadastrar</a>
             </div>
           </div>

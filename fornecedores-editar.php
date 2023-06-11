@@ -22,7 +22,7 @@
     }
     else
     {
-      header('Location: ../fornecedores-listar.php');
+      header('Location: ../admin/fornecedores-listar.php');
     }
   }  
   else
@@ -133,7 +133,7 @@ body{
 </head>
 <body>
 
-  <form action="../fornecedores-listar.php">
+  <form action="../admin/fornecedores-listar.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
