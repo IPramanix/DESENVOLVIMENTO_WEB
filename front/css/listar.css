@@ -1,0 +1,38 @@
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(../img/lstbkg.jpg);
+      background-size: cover;
+    }
+    
+    .container {
+      width: 800px;
+      margin: 100px auto;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .actions {
+      text-align: right;
+    }
+    
+    .actions button {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }

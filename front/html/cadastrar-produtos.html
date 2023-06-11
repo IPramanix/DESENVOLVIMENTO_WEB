@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cadastrar Produto</title>
+
+  <link rel="stylesheet" href="../css/criar2.css">
+
+</head>
+<body>
+  
+  <form action="../html/home.html" method="get">
+    <div class="back-background">
+      <Button type="submit">Voltar</Button>
+    </div>
+  </form>
+  
+    
+  <div class="container">
+    <h1>Cadastrar Produto</h1>
+    
+    <form action="backend.php" method="POST">
+      <label for="codigo">Código:</label>
+      <input type="text" id="codigo" name="codigo" required>
+      
+      <label for="descricao">Descrição:</label>
+      <input type="text" id="descricao" name="descricao" required>
+      
+      <label for="estoque_inicial">Estoque Inicial:</label>
+      <input type="number" id="estoque_inicial" name="estoque_inicial" required>
+      
+      <label for="estoque_atual">Estoque Atual:</label>
+      <input type="number" id="estoque_atual" name="estoque_atual" required>
+      
+      <label for="preco_compra">Preço de Compra:</label>
+      <input type="number" id="preco_compra" name="preco_compra" required>
+      
+      <label for="preco_venda">Preço de Venda:</label>
+      <input type="number" id="preco_venda" name="preco_venda" required>
+      
+      <label for="fornecedor">Fornecedor:  <select id="fornecedor" name="fornecedor" required>
+        <option value="">Selecione um fornecedor</option>
+        <option value="fornecedor1">Fornecedor 1</option>
+        <option value="fornecedor2">Fornecedor 2</option>
+        <option value="fornecedor3">Fornecedor 3</option>
+      </select></label>
+      
+      
+      <button type="submit" value="Cadastrar" class="register-button">Cadastrar</button>
+    </form>
+  </div>
+
+  <div class="final"><h6>Obrigado por usar nosso site!</h6></div>
+  
+</body>
+</html>
