@@ -123,7 +123,6 @@
           <a href="../lstfornecedores.php">Fornecedores</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../lstfornecedores.php">Listar</a>
               <a href="../fornecedores-criar.php">Cadastrar</a>
             </div>
           </div>
@@ -132,7 +131,6 @@
           <a href="../listar-produtos.php">Produtos</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../listar-produtos.php">Listar</a>
               <a href="../cadastrar-produtos.php">Cadastrar</a>
             </div>
           </div>
