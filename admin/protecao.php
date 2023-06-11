@@ -18,7 +18,7 @@
       {
         unset($_SESSION['usuario']);
         unset($_SESSION['usuario']);
-        header('Location: index.php');
+        header('Location: /index.php');
       }
       else
       {
@@ -31,7 +31,7 @@
   else
   {
     //nao acessa
-    header('Location: index.php');
+    header('Location: /index.php');
   }
 
 
