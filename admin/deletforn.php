@@ -14,11 +14,11 @@
                 $sqlDeletes = "DELETE FROM fornecedores WHERE id_fornecedor=$id_fornecedor";
                 $resultDeletes = $mysqli->query($sqlDeletes);  
                 
-                header('Location: listar-fornecedores.php');
+                header('Location: ../listar-fornecedores.php');
             }
     }
     else
     {
-        header('Location: listar-fornecedores.php');
+        header('Location: ../listar-fornecedores.php');
     }
     ?>

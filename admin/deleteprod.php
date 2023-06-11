@@ -14,11 +14,11 @@
                 $sqlDelete = "DELETE FROM produtos WHERE id_produto=$id_produto";
                 $resultDelete = $mysqli->query($sqlDelete);  
                 
-                header('Location: listar-produtos.php');
+                header('Location: ../listar-produtos.php');
             }
     }
     else
     {
-        header('Location: listar-produtos.php');
+        header('Location: ../listar-produtos.php');
     }
     ?>

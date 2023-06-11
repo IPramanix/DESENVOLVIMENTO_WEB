@@ -18,6 +18,6 @@
 
         $result = $mysqli->query($sqlupdate);
     }
-    header('Location: listar-produtos.php');
+    header('Location: ../listar-produtos.php');
 
 ?>

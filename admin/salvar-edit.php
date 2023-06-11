@@ -16,6 +16,6 @@
 
         $result = $mysqli->query($sqlUpdate);
     }
-    header('Location: listar-fornecedores.php');
+    header('Location: ../listar-fornecedores.php');
 
 ?>

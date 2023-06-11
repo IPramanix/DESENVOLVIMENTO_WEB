@@ -1,33 +1,18 @@
 <?php
-  if(!empty($_GET['id_fornecedor']))
+  if(isset($_POST['submit']))
   {
     include_once('conexao.php');
 
-    $id_fornecedor = $_GET['id_fornecedor'];
+    $nome_fornecedor = $_POST['nome_fornecedor'];
+    $cnpj = $_POST['cnpj'];
+    $telefone = $_POST['telefone'];
+    $endereco = $_POST['endereco'];
+    $email = $_POST['email'];
 
-    $sqlSelect = "SELECT * FROM  fornecedores WHERE id_fornecedor=$id_fornecedor";
+    $result = mysqli_query($mysqli, "INSERT INTO fornecedores(nome_fornecedor,cnpj,telefone,endereco,email) 
+    VALUES ('$nome_fornecedor', '$cnpj', '$telefone', '$endereco', '$email')");
 
-    $result = $mysqli->query($sqlSelect);
-
-    if($result->num_rows > 0)
-    {
-      while($user_data = mysqli_fetch_assoc($result))
-      {
-        $nome_fornecedor = $user_data['nome_fornecedor'];
-        $cnpj = $user_data['cnpj'];
-        $telefone = $user_data['telefone'];
-        $endereco = $user_data['endereco'];
-        $email = $user_data['email'];
-      }      
-    }
-    else
-    {
-      header('Location: listar-fornecedores.php');
-    }
-  }  
-  else
-  {
-
+    header('Location: ../listar-fornecedores.php');
   }
 ?>
 <!DOCTYPE html>
@@ -36,7 +21,7 @@
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Editar fornecedor</title>
+  <title>Cadastrar fornecedor</title>
 
   <style>
     /* Estilos CSS */
@@ -111,7 +96,7 @@ body{
       margin-bottom: 10px;
     }
   
-  #update {
+  .register-button {
     display: block;
     width: 94%;
     height: 40px;
@@ -133,7 +118,7 @@ body{
 </head>
 <body>
 
-  <form action="listar-fornecedores.php">
+  <form action="../StorageMercancia/home.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
@@ -141,29 +126,27 @@ body{
   
 
   <div class="container">
-    <h1>Editar fornecedor</h1>
+    <h1>Cadastrar fornecedor</h1>
     
-    <form action="salvar-edit.php" method="POST">
-      <input type="hidden" name="id_fornecedor" value="<?php echo $id_fornecedor ?>">
-
+    <form action="../StorageMercancia/fornecedores-criar.php" method="POST">
+      
       <label for="nome_fornecedor">Nome:</label>
-      <input type="text" id="nome_fornecedor" name="nome_fornecedor" value="<?php echo $nome_fornecedor ?>" required>
+      <input type="text" id="nome_fornecedor" name="nome_fornecedor" required>
       
       <label for="cnpj">CNPJ:</label>
-      <input type="text" id="cnpj" name="cnpj" value="<?php echo $cnpj ?>" required>
+      <input type="text" id="cnpj" name="cnpj" required>
       
       <label for="telefone">Número:</label>
-      <input type="text" id="telefone" name="telefone" value="<?php echo $telefone ?>" required>
+      <input type="text" id="telefone" name="telefone" required>
       
       <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" name="endereco" value="<?php echo $endereco ?>" required>
+      <input type="text" id="endereco" name="endereco" required>
       
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" value="<?php echo $email ?>" required>
-      <br><br>
+      <input type="email" id="email" name="email" required>
       
-      <input type="submit" name="update" id="update" value="Atualizar">
-   </form>
+      <button type="submit" name="submit" id="submit" class="register-button">Cadastrar</button>
+    </form>
   </div>
 
   <div class="final"><h6>Obrigado por usar nosso site!</h6></div>

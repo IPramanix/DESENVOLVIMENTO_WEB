@@ -105,7 +105,7 @@
 </head>
 <body>
 
-  <form action="home.php">
+  <form action="../StorageMercancia/home.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>

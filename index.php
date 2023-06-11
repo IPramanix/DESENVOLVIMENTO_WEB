@@ -73,7 +73,7 @@
 <body>
   <div class="container">
     <h1>Login</h1>
-    <form action="admin/protecao.php" method="POST"> 
+    <form action="../StorageMercancia/admin/protecao.php" method="POST"> 
       <label for="usuario">Usuário:</label>
       <input type="text" id="usuario" name="usuario" required>
       
