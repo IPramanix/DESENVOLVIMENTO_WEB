@@ -136,7 +136,7 @@ body{
 </head>
 <body>
   
-  <form action="../StorageMercancia/listar-produtos.php">
+  <form action="../listar-produtos.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
@@ -146,7 +146,7 @@ body{
   <div class="container">
     <h1>Editar Produto</h1>
     
-    <form action="../StorageMercancia/admin/salveEdit.php" method="POST">
+    <form action="../admin/salveEdit.php" method="POST">
       <input type="hidden" name="id_produto" value="<?php echo $id_produto ?>">
 
       <label for="codigo">Código:</label>

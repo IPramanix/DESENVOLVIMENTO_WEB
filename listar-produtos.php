@@ -7,7 +7,7 @@
   {
     unset($_SESSION['usuario']);
     unset($_SESSION['usuario']);
-    header('Location: index.php');
+    header('Location: ../index.php');
   }
   $logado = $_SESSION['usuario'];
 
@@ -101,7 +101,7 @@
   </style>
 </head>
 <body>
-  <form action="../StorageMercancia/home.php">
+  <form action="../home.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>

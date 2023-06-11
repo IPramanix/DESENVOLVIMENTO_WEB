@@ -118,26 +118,26 @@
   <header>
     <nav>
       <ul>
-        <li><a href="../StorageMercancia/home.php">Home</a></li>
+        <li><a href="../home.php">Home</a></li>
         <li class="dropdown">
-          <a href="../StorageMercancia/listar-fornecedores.php">Fornecedores</a>
+          <a href="../listar-fornecedores.php">Fornecedores</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../StorageMercancia/listar-fornecedores.php">Listar</a>
-              <a href="../StorageMercancia/fornecedores-criar.php">Cadastrar</a>
+              <a href="../listar-fornecedores.php">Listar</a>
+              <a href="../fornecedores-criar.php">Cadastrar</a>
             </div>
           </div>
         </li>
         <li class="dropdown">
-          <a href="../StorageMercancia/listar-fornecedores.php">Produtos</a>
+          <a href="../listar-fornecedores.php">Produtos</a>
           <div class="dropdown-content">
             <div class="rectangle">
-              <a href="../StorageMercancia/listar-produtos.php">Listar</a>
-              <a href="../StorageMercancia/cadastrar-produtos.php">Cadastrar</a>
+              <a href="../listar-produtos.php">Listar</a>
+              <a href="../cadastrar-produtos.php">Cadastrar</a>
             </div>
           </div>
         </li>
-        <li><a href="../StorageMercancia/admin/logout.php">Sair</a></li>
+        <li><a href="../admin/logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>

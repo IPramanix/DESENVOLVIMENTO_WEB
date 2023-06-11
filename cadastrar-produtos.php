@@ -122,7 +122,7 @@ body{
 </head>
 <body>
   
-  <form action="../StorageMercancia/home.php">
+  <form action="../home.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
@@ -132,7 +132,7 @@ body{
   <div class="container">
     <h1>Cadastrar Produto</h1>
     
-    <form action="../StorageMercancia/cadastrar-produtos.php" method="POST">
+    <form action="../cadastrar-produtos.php" method="POST">
       
       <label for="codigo">Código:</label>
       <input type="number" id="codigo" name="codigo" required>

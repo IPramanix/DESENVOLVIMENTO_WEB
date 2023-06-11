@@ -118,7 +118,7 @@ body{
 </head>
 <body>
 
-  <form action="../StorageMercancia/home.php">
+  <form action="../home.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
@@ -128,7 +128,7 @@ body{
   <div class="container">
     <h1>Cadastrar fornecedor</h1>
     
-    <form action="../StorageMercancia/fornecedores-criar.php" method="POST">
+    <form action="../fornecedores-criar.php" method="POST">
       
       <label for="nome_fornecedor">Nome:</label>
       <input type="text" id="nome_fornecedor" name="nome_fornecedor" required>

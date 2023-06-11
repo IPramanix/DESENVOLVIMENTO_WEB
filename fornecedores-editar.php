@@ -133,7 +133,7 @@ body{
 </head>
 <body>
 
-  <form action="../StorageMercancia/listar-fornecedores.php">
+  <form action="../listar-fornecedores.php">
     <div class="back-background">
       <Button type="submit">Voltar</Button>
     </div>
@@ -143,7 +143,7 @@ body{
   <div class="container">
     <h1>Editar fornecedor</h1>
     
-    <form action="../StorageMercancia/admin/salvar-edit.php" method="POST">
+    <form action="../admin/salvar-edit.php" method="POST">
       <input type="hidden" name="id_fornecedor" value="<?php echo $id_fornecedor ?>">
 
       <label for="nome_fornecedor">Nome:</label>
