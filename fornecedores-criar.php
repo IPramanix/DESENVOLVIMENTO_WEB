@@ -12,7 +12,7 @@
     $result = mysqli_query($mysqli, "INSERT INTO fornecedores(nome_fornecedor,cnpj,telefone,endereco,email) 
     VALUES ('$nome_fornecedor', '$cnpj', '$telefone', '$endereco', '$email')");
 
-    header('Location: ../fornecedores-listar.php');
+    header('Location: ../admin/fornecedores-listar.php');
   }
 ?>
 <!DOCTYPE html>
@@ -128,7 +128,7 @@ body{
   <div class="container">
     <h1>Cadastrar fornecedor</h1>
     
-    <form action="../fornecedores-criar.php" method="POST">
+    <form action="../admin/fornecedores-criar.php" method="POST">
       
       <label for="nome_fornecedor">Nome:</label>
       <input type="text" id="nome_fornecedor" name="nome_fornecedor" required>

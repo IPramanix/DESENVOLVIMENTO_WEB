@@ -14,7 +14,7 @@
     $aresult = mysqli_query($mysqli, "INSERT INTO produtos(codigo, descricao, estoqueInicial, estoqueAtual, precoCompra, precoVenda, id_fornecedor) 
     VALUES ('$codigo', '$descricao', '$estoqueInicial', '$estoqueAtual', '$precoCompra', '$precoVenda', '$id_fornecedor')");
 
-    header('Location: ../produtos-listar.php');
+    header('Location: ../admin/produtos-listar.php');
 
   }
 ?>
@@ -132,7 +132,7 @@ body{
   <div class="container">
     <h1>Cadastrar Produto</h1>
     
-    <form action="../cadastrar-produtos.php" method="POST">
+    <form action="../admin/cadastrar-produtos.php" method="POST">
       
       <label for="codigo">Código:</label>
       <input type="number" id="codigo" name="codigo" required>
